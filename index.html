@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Rakesh J K, BCA student and aspiring software developer.">
+  <title>Rakesh J K | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#home">Rakesh<span>.</span></a>
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Rakesh J K</span></h1>
+        <h2>BCA Student <span class="divider">|</span> Aspiring Software Developer</h2>
+        <p class="intro">I'm passionate about technology, web development, programming, and building creative digital projects.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View My Projects</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Rakesh initials"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="initials">RJ</div><div class="photo-frame"><img src="profile.jpg" alt="Portrait of Rakesh J K" class="profile-photo" onerror="this.parentElement.style.display='none'"></div></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>About Me</h2></div>
+      <div class="panel about-panel">
+        <h3>Who am I?</h3>
+        <p>Hello! My name is Rakesh J K. I am a Bachelor of Computer Applications (BCA) student interested in programming, web development, and modern technology.</p>
+        <p>My goal is to improve my technical skills, develop useful software applications, and become a successful software developer.</p>
+        <div class="facts">
+          <div class="fact"><span>Name</span><strong>Rakesh J K</strong></div>
+          <div class="fact"><span>Degree</span><strong>BCA (Pursuing)</strong></div>
+          <div class="fact"><span>College</span><strong>STG First Grade College</strong></div>
+          <div class="fact"><span>Location</span><strong>Chinakurali, Karnataka</strong></div>
+          <div class="fact"><span>Interests</span><strong>Web Development, Programming</strong></div>
+          <div class="fact"><span>Goal</span><strong>Software Developer</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-heading"><p class="eyebrow">MY LEARNING JOURNEY</p><h2>Education</h2></div>
+      <article class="panel education-card">
+        <div class="education-mark">🎓</div>
+        <div><h3>Bachelor of Computer Applications (BCA)</h3><p>STG First Grade College, Chinakurali</p><p class="muted">Currently pursuing my degree</p></div>
+      </article>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading"><p class="eyebrow">WHAT I'M LEARNING</p><h2>My Skills</h2></div>
+      <div class="skills-grid">
+        <div class="skill-card"><span>01</span><strong>HTML</strong></div><div class="skill-card"><span>02</span><strong>CSS</strong></div>
+        <div class="skill-card"><span>03</span><strong>JavaScript</strong></div><div class="skill-card"><span>04</span><strong>Python</strong></div>
+        <div class="skill-card"><span>05</span><strong>C Programming</strong></div><div class="skill-card"><span>06</span><strong>Java</strong></div>
+        <div class="skill-card"><span>07</span><strong>MySQL</strong></div><div class="skill-card"><span>08</span><strong>Web Development</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading"><p class="eyebrow">THINGS I'VE BUILT / PLAN TO BUILD</p><h2>My Projects</h2></div>
+      <div class="projects-grid">
+        <article class="panel project-card"><div class="project-number">PROJECT 01</div><h3>Personal Portfolio</h3><p>A responsive personal website made with HTML, CSS, and JavaScript.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        <article class="panel project-card"><div class="project-number">PROJECT 02</div><h3>Expense Tracker</h3><p>A project concept for recording expenses, tracking spending, and managing a personal budget.</p><div class="tags"><span>Web</span><span>Database</span></div></article>
+        <article class="panel project-card"><div class="project-number">PROJECT 03</div><h3>Event Management System</h3><p>A college project concept for organizing events, registrations, and event information.</p><div class="tags"><span>Web Development</span><span>Database</span></div></article>
+      </div>
+      <p class="project-note">Update these sample project descriptions with your actual completed work before sharing your portfolio.</p>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-heading"><p class="eyebrow">LET'S CONNECT</p><h2>Contact Me</h2></div>
+      <div class="panel contact-panel">
+        <p>Have a project idea or want to connect? Send a message below.</p>
+        <form id="contact-form">
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+          <label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="message">Your message</label><textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        <p class="muted small">Demo form only: it does not send or save messages until you connect an email service or backend.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Rakesh J K. Made with care and code.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
